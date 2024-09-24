@@ -14,20 +14,22 @@ public class RelativeXpath {
 //
         driver.manage().window().maximize();
         driver.get("https://syntaxprojects.com/Xpath-homework.php");
-
+        // Enter hobbies
         WebElement hobbies = driver.findElement(By.xpath("//input[@id='yourHobbiesId']"));
         hobbies.sendKeys("Movies");
 
+        // click button and ensure message is displayed
         WebElement button = driver.findElement(By.xpath("//button[text()='Click Here']"));
         button.click();
-
+       //Enter favorate movie
         WebElement favmovies = driver.findElement(By.name("favoriteMovies"));
         favmovies.sendKeys("What If");
 
-
+        //The user uses the `contains()` method of XPath to locate a specific text element on the page and prints it to the console.
         WebElement textelement = driver.findElement(By.xpath("//label[contains(text(),'sit amet consectetur ')]"));
         System.out.println(textelement.getText());
 
+        // enter the city in the designated field.
         WebElement city = driver.findElement(By.name("yourCity"));
         city.sendKeys("Johannesburg");
 
