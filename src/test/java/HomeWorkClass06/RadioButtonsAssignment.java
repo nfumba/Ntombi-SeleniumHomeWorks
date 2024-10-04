@@ -12,12 +12,16 @@ public class RadioButtonsAssignment {
         driver.manage().window().maximize();
         driver.get("https://syntaxprojects.com/basic-radiobutton-demo-homework.php");
 
-        List<WebElement> allAgeRB = driver.findElements(By.xpath("//input[@name='ageGroup']"));
-        for( WebElement radioBtn:allAgeRB){
-            if(radioBtn.getAttribute("value").equals("5 - 15")){
+        List<WebElement> FavBev = driver.findElements(By.xpath("//input[@name='beverage']"));
+        for (WebElement radioBtn : FavBev) {
+            if (radioBtn.getAttribute("value").equals("Juice")) {
                 radioBtn.click();
             }
-        }
 
+        }
     }
 }
+
+
+
+
