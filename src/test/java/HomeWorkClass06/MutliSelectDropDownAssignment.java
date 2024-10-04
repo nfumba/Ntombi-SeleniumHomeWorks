@@ -41,7 +41,7 @@ public class MutliSelectDropDownAssignment {
         Thread.sleep(5000);
         selectMulitple.deselectByIndex(1);
 
-        //driver.quit();
+        driver.quit();
 
 
     }
